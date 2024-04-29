@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1 id="res"></h1>
+    <button id="Jhonbutton" onclick="handleClick(this)">Jhon</button>
+<button id="Kumarbutton" onclick="handleClick(this)">Kumar</button>
+    <button id="Kishorebutton" onclick="handleClick(this)">Kishore</button>
+    </div>
+
+    <script>
+        function handleClick(btn){
+           let text = btn.innerHTML;
+          console.log(text);
+         document.getElementById("res").innerText = text;
+        }
+    </script>
+</body>
+</html>
